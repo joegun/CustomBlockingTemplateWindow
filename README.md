@@ -9,6 +9,8 @@ This is a custom blocking template window implementation in XAML and MVVM, which
 
 USAGE
 
-<interactionRequest:BlockingTemplateWindowView Grid.Row="1" DataContext="{Binding Path=BlockingTemplateWindowViewModel}" 
-OverlayOnTopOf="{Binding ElementName=PaymentStatusReleaseGrid, Mode=OneWay}" 
-IsDisplayed="{Binding Path=IsDisplayed, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+<interactionRequest:BlockingTemplateWindowView
+
+	DataContext="{Binding Path=BlockingTemplateWindowViewModel}"
+	OverlayOnTopOf="{Binding ElementName=PaymentStatusReleaseGrid, Mode=OneWay}"
+	IsDisplayed="{Binding Path=IsDisplayed, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
